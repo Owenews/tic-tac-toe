@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./styles/gardevoir.css" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="icon" type="image/png" href="./styles/images/logo.png">
+
+  <title>Tic Tac Toe</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav">
+        <ul>
+          <li><a target="_blank" href="https://www.youtube.com/watch?v=XoDY9vFAaG8">Règles du jeu</a></li>
+          <li><a target="_blank" href="https://guthib.com/">Repo</a></li>
+          <li><a target="_blank" href="https://fr.wikipedia.org/wiki/La_Soupe_aux_choux_(film)">Origine image 1</a></li>
+          <li><a target="_blank" href="https://fr.wikipedia.org/wiki/Le_D%C3%AEner_de_cons">Origine image 2</a></li>
+          <li>
+            <div class="checkbox-wrapper-6">
+              <input class="tgl tgl-light" id="cb1-6" type="checkbox" />
+              <label class="tgl-btn" for="cb1-6">
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main__container container">
+      <div class="title">
+        <img src="./styles/images/logo.png" alt="logo" />
+        <h1>TIC TAC TOE</h1>
+        <img src="./styles/images/logo.png" alt="logo" />
+      </div>
+      <div popover id="popover" class="confettis">
+        <p></p>
+        <button class="reset" popovertarget="popover" id="close-popover">Fermer</button>
+      </div>
+      <div class="board">
+        <div class="square square-a"><img src="" alt="" class="square-img-hide"></div>
+        <div class="square square-b"><img src="" alt="" class="square-img-hide"></div>
+        <div class="square square-c"><img src="" alt="" class="square-img-hide"></div>
+        <div class="square square-d"><img src="" alt="" class="square-img-hide"></div>
+        <div class="square square-e"><img src="" alt="" class="square-img-hide"></div>
+        <div class="square square-f"><img src="" alt="" class="square-img-hide"></div>
+        <div class="square square-g"><img src="" alt="" class="square-img-hide"></div>
+        <div class="square square-h"><img src="" alt="" class="square-img-hide"></div>
+        <div class="square square-i"><img src="" alt="" class="square-img-hide"></div>
+      </div>
+      <div class="reset-btns">
+        <button id="reset-game" class="reset">Rejouer</button>
+        <button id="reset-scores" class="reset">Réinitialiser</button>
+      </div>
+
+      <div class="scores-table">
+        <h2>Scores des joueurs :</h2>
+        <div class="scores-table__scores">
+          <p><b>Joueur 1 : </b><span id="player1-score">0</span></p>
+          <p><b>Joueur 2 : </b><span id="player2-score">0</span></p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Fait par: Sami Paris, Mathéo Delvert, Quentin Stempfer, Tiffany Dbeissy, Owen Iluobe, Mehmet Minnet</p>
+    <p>©<span id="year"></span> Tous droits réservés</p>
+  </footer>
+
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>
